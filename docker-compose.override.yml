@@ -1,0 +1,33 @@
+version: '3'
+services:
+  decidim:
+    ports:
+      - 3000:3000
+    env_file:
+      - secrets.env
+    volumes:
+      - gems-prod:/usr/local/bundle:delegated
+    environment:
+      - RAILS_ENV=production
+#    command: ["bin/rails", "server", "-b", "ssl://decidim.iiia.csic.es:3000?key=localhost.key&cert=localhost.crt"]
+    
+  pg:
+    volumes:
+      - pg-prod:/var/lib/postgresql/data
+    env_file:
+      - secrets.env
+      
+  redis:
+    volumes:
+      - redis-prod:/data
+      
+  backup:
+    image: futurice/docker-volume-backup
+    volumes:
+      - pg-prod:/backup/pg-prod:ro    # Mount the postgresql data volume (as read-only)
+      - ./backups:/archive    
+
+volumes:
+  gems-prod: {}
+  pg-prod: {}
+  redis-prod: {}

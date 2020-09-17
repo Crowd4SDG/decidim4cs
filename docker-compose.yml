@@ -1,0 +1,25 @@
+version: '3'
+services:
+  decidim:
+    build: 
+      context: docker/decidim
+      args:
+            - USER_ID=$USER_ID
+            - GROUP_ID=$GROUP_ID
+    working_dir: /code
+    env_file:
+      - app.env
+    entrypoint: /code/bin/entrypoint.sh
+    command: ["bin/rails", "server", "-b", "0.0.0.0"]
+    volumes:
+      - .:/code
+    depends_on:
+      - pg
+      - redis
+      
+  pg:
+    image: postgres
+      
+  redis:
+    image: redis
+
