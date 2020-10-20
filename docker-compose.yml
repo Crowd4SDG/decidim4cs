@@ -18,7 +18,8 @@ services:
       - redis
       
   pg:
-    image: postgres
+    build:
+        context: docker/postgres
       
   redis:
     image: redis

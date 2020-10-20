@@ -19,16 +19,4 @@ if [[ $RAILS_ENV == "production" ]]; then
     echo "  SMTP_ADDRESS: ${SMTP_ADDRESS}" >> config/application.yml
     echo "  SMTP_DOMAIN: ${SMTP_DOMAIN}" >> config/application.yml
 fi
-echo "Initializing database"
-bin/rails db:create
-if [[ $RAILS_ENV == "production" ]]; then
-    bin/rails assets:precompile
-    #echo "No precomp"
-fi
-bin/rails db:migrate
-if [[ $RAILS_ENV == "production" ]]; then
-    echo "Creating system user"
-    bin/rails console < /code/make-system.rb
-else
-    bin/rails db:seed
-fi
+init_db.sh
