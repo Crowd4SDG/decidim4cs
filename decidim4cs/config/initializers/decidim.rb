@@ -205,5 +205,5 @@ end
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
 
-Decidim::Initiatives.do_not_require_authorization = true
+#Decidim::Initiatives.do_not_require_authorization = true
 
