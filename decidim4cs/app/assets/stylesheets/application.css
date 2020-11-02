@@ -14,3 +14,62 @@
  *= require_tree .
  *= require_self
  */
+
+ .title-bar{
+  background: #fff /*#fdfdfe*/;
+  padding: 0;
+  border-bottom: 1px solid rgba(white, .5);
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.dropdown.menu>li.is-active>a {
+  color:#000;
+}
+.topbar__dropmenu>ul>li>a {
+  color: #000;
+}
+
+.topbar__dropmenu .is-dropdown-submenu li a {
+    padding: .5rem;
+    color: #000;
+}
+
+.topbar__dropmenu>ul>li>a::after {
+    margin-top: -1px !important;
+    border-top-color: #000 !important;
+}
+
+/*
+.topbar__admin__link a {
+    color: #000;
+}
+*/
+
+.topbar__edit__link a {
+    color: #000;
+}
+
+.topbar__edit__link a:hover {
+    color: #ef604d;
+}
+
+.topbar__conversations .icon {
+    fill: #ef604d;
+    opacity: .3;
+}
+
+.topbar__conversations .icon:hover {
+  opacity: 1;
+}
+
+.topbar__notifications .icon {
+    fill: #ef604d;
+    opacity: .3;
+}
+
+.topbar__notifications .icon:hover {
+    opacity: 1;
+}
