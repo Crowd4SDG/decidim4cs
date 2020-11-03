@@ -1,0 +1,674 @@
+[
+  {
+    "id": 258,
+    "locale": "en",
+    "key": "decidim.pages.home.extended.how_to_participate",
+    "value": "How can I contribute to citizen science projects?"
+  },
+  {
+    "id": 166,
+    "locale": "en",
+    "key": "decidim.help.participatory_spaces.assemblies.contextual",
+    "value": "<p>A <strong>project</strong> is where you put forth your ideas for a specific area or scope. Collaborators make proposals to reach the goal of the project.</p> <p>You can start debates, run a blog and conduct a survey. You can also set periodical meetings to make decisions about the project. Some of these meetings are private and some are open. If they are open, it is possible to participate in them (for example: attending if the capacity allows it, adding points to the agenda, or commenting on the proposals and decisions taken).</p> <p>Examples: A project for the betterment of the urban drinking water, a project to reduce the plastic use, etc.</p>"
+  },
+  {
+    "id": 167,
+    "locale": "en",
+    "key": "decidim.help.participatory_spaces.assemblies.page",
+    "value": "<p>A <strong>project</strong> is where you put forth your ideas for a specific area or scope. Collaborators make proposals to reach the goal of the project.</p> <p>You can start debates, run a blog and conduct a survey. You can also set periodical meetings to make decisions about the project. Some of these meetings are private and some are open. If they are open, it is possible to participate in them (for example: attending if the capacity allows it, adding points to the agenda, or commenting on the proposals and decisions taken).</p> <p>Examples: A project for the betterment of urban drinking water, a project to reduce plastic use, etc.</p>"
+  },
+  {
+    "id": 146,
+    "locale": "en",
+    "key": "decidim.assemblies.index.title",
+    "value": "Projects"
+  },
+  {
+    "id": 147,
+    "locale": "en",
+    "key": "decidim.menu.assemblies",
+    "value": "Projects"
+  },
+  {
+    "id": 148,
+    "locale": "en",
+    "key": "activerecord.models.decidim/assembly.one",
+    "value": "Project"
+  },
+  {
+    "id": 149,
+    "locale": "en",
+    "key": "activerecord.models.decidim/assembly.other",
+    "value": "Projects"
+  },
+  {
+    "id": 150,
+    "locale": "en",
+    "key": "decidim.admin.menu.assemblies",
+    "value": "Projects"
+  },
+  {
+    "id": 151,
+    "locale": "en",
+    "key": "decidim.admin.titles.assemblies",
+    "value": "Projects"
+  },
+  {
+    "id": 152,
+    "locale": "en",
+    "key": "decidim.assemblies.pages.home.highlighted_assemblies.active_assemblies",
+    "value": "Active projects\r\n"
+  },
+  {
+    "id": 153,
+    "locale": "en",
+    "key": "decidim.assemblies.show.children",
+    "value": "Projects"
+  },
+  {
+    "id": 154,
+    "locale": "en",
+    "key": "decidim.assemblies.statistics.assemblies_count",
+    "value": "Projects\r\n"
+  },
+  {
+    "id": 155,
+    "locale": "en",
+    "key": "layouts.decidim.assemblies.index.children",
+    "value": "Projects: "
+  },
+  {
+    "id": 156,
+    "locale": "en",
+    "key": "layouts.decidim.assemblies.index.promoted_assemblies",
+    "value": "Highlighted projects"
+  },
+  {
+    "id": 157,
+    "locale": "en",
+    "key": "decidim.pages.home.statistics.assemblies_count",
+    "value": "Projects"
+  },
+  {
+    "id": 158,
+    "locale": "en",
+    "key": "decidim.admin.titles.assemblies_types",
+    "value": "Project types"
+  },
+  {
+    "id": 159,
+    "locale": "en",
+    "key": "decidim.admin.menu.assemblies_types",
+    "value": "Project types"
+  },
+  {
+    "id": 160,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly_setting.update",
+    "value": "%{user_name} updated the projects settings"
+  },
+  {
+    "id": 161,
+    "locale": "en",
+    "key": "decidim.assemblies.admin.assemblies_settings.form.title",
+    "value": "Settings for projects"
+  },
+  {
+    "id": 162,
+    "locale": "en",
+    "key": "decidim.assemblies.content_blocks.highlighted_assemblies.name",
+    "value": "Highlighted projects"
+  },
+  {
+    "id": 163,
+    "locale": "en",
+    "key": "decidim.assemblies.pages.home.highlighted_assemblies.assemblies_button_title",
+    "value": "Link to the Projects page displaying all the projects"
+  },
+  {
+    "id": 164,
+    "locale": "en",
+    "key": "decidim.assemblies.pages.home.highlighted_assemblies.see_all_assemblies",
+    "value": "See all projects"
+  },
+  {
+    "id": 165,
+    "locale": "en",
+    "key": "decidim.help.main_topic.default_page.content",
+    "value": "<p>In %{organization} you can participate and decide on different topics, through the spaces you see in the top menu: Processes, Projects, Initiatives, Consultations.</p> <p>Within each one you will find different options to participate: make proposals - individually or with other people-, take part in debates, prioritize projects to implement, attend face-to-face meetings and other actions.</p>\r\n"
+  },
+  {
+    "id": 168,
+    "locale": "en",
+    "key": "decidim.help.participatory_spaces.assemblies.title",
+    "value": "What are projects?"
+  },
+  {
+    "id": 169,
+    "locale": "en",
+    "key": "decidim.metrics.assemblies.description",
+    "value": "Number of projects created"
+  },
+  {
+    "id": 170,
+    "locale": "en",
+    "key": "decidim.metrics.assemblies.object",
+    "value": "projects"
+  },
+  {
+    "id": 171,
+    "locale": "en",
+    "key": "decidim.metrics.assemblies.title",
+    "value": "Projects"
+  },
+  {
+    "id": 172,
+    "locale": "en",
+    "key": "decidim.participatory_processes.show.related_assemblies",
+    "value": "Related projects"
+  },
+  {
+    "id": 173,
+    "locale": "en",
+    "key": "decidim.participatory_process.show.related_assemblies",
+    "value": "Related projects"
+  },
+  {
+    "id": 174,
+    "locale": "en",
+    "key": "layouts.decidim.assemblies.order_by_assemblies.assemblies.one",
+    "value": "%{count} projects"
+  },
+  {
+    "id": 175,
+    "locale": "en",
+    "key": "layouts.decidim.assemblies.order_by_assemblies.assemblies.other",
+    "value": "%{count} projects"
+  },
+  {
+    "id": 176,
+    "locale": "en",
+    "key": "decidim.admin.assembly_user_roles.create.error",
+    "value": "There was a problem adding an admin for this project."
+  },
+  {
+    "id": 178,
+    "locale": "en",
+    "key": "decidim.admin.assembly_user_roles.index.assembly_admins_title",
+    "value": "Project admins"
+  },
+  {
+    "id": 179,
+    "locale": "en",
+    "key": "decidim.admin.assembly_user_roles.new.title",
+    "value": "New project admin."
+  },
+  {
+    "id": 180,
+    "locale": "en",
+    "key": "decidim.admin.assembly_user_roles.update.error",
+    "value": "There was a problem updating an admin for this project."
+  },
+  {
+    "id": 181,
+    "locale": "en",
+    "key": "decidim.admin.assembly_user_roles.update.success",
+    "value": "Admin updated successfully for this project."
+  },
+  {
+    "id": 182,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly.create",
+    "value": "%{user_name} created the %{resource_name} project"
+  },
+  {
+    "id": 183,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly.publish",
+    "value": "%{user_name} published the %{resource_name} project"
+  },
+  {
+    "id": 184,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly.unpublish",
+    "value": "%{user_name} unpublished the %{resource_name} project"
+  },
+  {
+    "id": 185,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly.update",
+    "value": "%{user_name} updated the %{resource_name} project"
+  },
+  {
+    "id": 186,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly_member.create",
+    "value": "%{user_name} created the %{resource_name} member in the %{space_name} project"
+  },
+  {
+    "id": 187,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly_member.delete",
+    "value": "%{user_name} removed the %{resource_name} member from the %{space_name} project"
+  },
+  {
+    "id": 188,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly_member.update",
+    "value": "%{user_name} updated the %{resource_name} member in the %{space_name} project"
+  },
+  {
+    "id": 189,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly_type.create",
+    "value": "%{user_name} created the %{resource_name} project type"
+  },
+  {
+    "id": 190,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly_type.delete",
+    "value": "%{user_name} removed the %{resource_name} member from the %{space_name} project type"
+  },
+  {
+    "id": 191,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly_type.publish",
+    "value": "%{user_name} published the %{resource_name} project type"
+  },
+  {
+    "id": 192,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly_type.unpublish",
+    "value": "%{user_name} unpublished the %{resource_name} project type"
+  },
+  {
+    "id": 193,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly_type.update",
+    "value": "%{user_name} updated the %{resource_name} project type"
+  },
+  {
+    "id": 194,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly_user_role.create",
+    "value": "%{user_name} invited %{resource_name} to the %{space_name} project"
+  },
+  {
+    "id": 195,
+    "locale": "en",
+    "key": "layouts.decidim.assembly_navigation.assembly_menu_item",
+    "value": "The project"
+  },
+  {
+    "id": 196,
+    "locale": "en",
+    "key": "decidim.admin.menu.assemblies_submenu.assembly_admins",
+    "value": "Project admins"
+  },
+  {
+    "id": 197,
+    "locale": "en",
+    "key": "decidim.admin.assemblies.update.error",
+    "value": "There was a problem updating this project."
+  },
+  {
+    "id": 198,
+    "locale": "en",
+    "key": "decidim.admin.assemblies.update.success",
+    "value": "Project successfully updated."
+  },
+  {
+    "id": 199,
+    "locale": "en",
+    "key": "decidim.admin.assemblies_types.update.error",
+    "value": "There was a problem updating this project type."
+  },
+  {
+    "id": 200,
+    "locale": "en",
+    "key": "decidim.admin.assemblies_types.update.success",
+    "value": "Project type successfully updated."
+  },
+  {
+    "id": 201,
+    "locale": "en",
+    "key": "decidim.events.assemblies.create_assembly_member.email_intro",
+    "value": "An admin of the <a href=\"%{resource_url}\">%{resource_name}</a> project has added you as one of its members."
+  },
+  {
+    "id": 202,
+    "locale": "en",
+    "key": "decidim.events.assemblies.create_assembly_member.email_outro",
+    "value": "You have received this notification because you have been invited to an project. Check the <a href=\"%{resource_path}\">project page</a> to contribute!"
+  },
+  {
+    "id": 203,
+    "locale": "en",
+    "key": "decidim.events.assemblies.create_assembly_member.email_subject",
+    "value": "You have been invited to be a member of the %{resource_name} project!"
+  },
+  {
+    "id": 204,
+    "locale": "en",
+    "key": "decidim.events.assemblies.create_assembly_member.notification_title",
+    "value": "You have been registered as a member of Project <a href=\"%{resource_path}\">%{resource_name}</a>. Check the <a href=\"%{resource_path}\">project page</a> to contribute!"
+  },
+  {
+    "id": 205,
+    "locale": "en",
+    "key": "decidim.assemblies.admin.assemblies.form.duration_help",
+    "value": "If the duration of this project is limited, select the end date. Otherwise, it will appear as indefinite."
+  },
+  {
+    "id": 206,
+    "locale": "en",
+    "key": "decidim.assemblies.admin.assemblies.form.included_at_help",
+    "value": "Select the date when this project was added to Decidim. It does not necessarily have to be the same as the creation date."
+  },
+  {
+    "id": 207,
+    "locale": "en",
+    "key": "decidim.assemblies.admin.assemblies.form.select_an_assembly_type",
+    "value": "Select an project type"
+  },
+  {
+    "id": 208,
+    "locale": "en",
+    "key": "decidim.assemblies.admin.assemblies.form.select_parent_assembly",
+    "value": "Select parent project"
+  },
+  {
+    "id": 209,
+    "locale": "en",
+    "key": "decidim.assemblies.admin.assemblies.form.slug_help",
+    "value": "URL slugs are used to generate the URLs that point to this project. Only accepts letters, numbers and dashes, and must start with a letter. Example: %{url}"
+  },
+  {
+    "id": 210,
+    "locale": "en",
+    "key": "decidim.assemblies.admin.assembly_copies.form.slug_help",
+    "value": "URL slugs are used to generate the URLs that point to this project. Only accepts letters, numbers and dashes, and must start with a letter. Example: %{url}"
+  },
+  {
+    "id": 211,
+    "locale": "en",
+    "key": "decidim.assemblies.last_activity.new_assembly",
+    "value": "New project"
+  },
+  {
+    "id": 212,
+    "locale": "en",
+    "key": "decidim.assemblies.show.assembly_type",
+    "value": "Project type"
+  },
+  {
+    "id": 213,
+    "locale": "en",
+    "key": "decidim.assemblies.show.private_space",
+    "value": "This is a private project"
+  },
+  {
+    "id": 214,
+    "locale": "en",
+    "key": "decidim.assemblies.show.social_networks_title",
+    "value": "Share this project on"
+  },
+  {
+    "id": 215,
+    "locale": "en",
+    "key": "decidim.admin.models.assembly.name",
+    "value": "Project"
+  },
+  {
+    "id": 216,
+    "locale": "en",
+    "key": "decidim.admin.models.assembly_user_role.name",
+    "value": "Project admin"
+  },
+  {
+    "id": 217,
+    "locale": "en",
+    "key": "decidim.admin.assembly_copies.new.title",
+    "value": "Duplicate project"
+  },
+  {
+    "id": 218,
+    "locale": "en",
+    "key": "decidim.admin.assembly_members.create.success",
+    "value": "Member successfully created for this project."
+  },
+  {
+    "id": 219,
+    "locale": "en",
+    "key": "decidim.admin.assembly_members.create.error",
+    "value": "There was a problem adding a member for this project."
+  },
+  {
+    "id": 220,
+    "locale": "en",
+    "key": "decidim.admin.assembly_members.destroy.success",
+    "value": "Member successfully deleted for this project."
+  },
+  {
+    "id": 221,
+    "locale": "en",
+    "key": "decidim.admin.assembly_members.edit.title",
+    "value": "Update project member."
+  },
+  {
+    "id": 222,
+    "locale": "en",
+    "key": "decidim.admin.assembly_members.index.assembly_members_title",
+    "value": "Project members"
+  },
+  {
+    "id": 223,
+    "locale": "en",
+    "key": "decidim.admin.assembly_members.new.title",
+    "value": "New project member."
+  },
+  {
+    "id": 224,
+    "locale": "en",
+    "key": "decidim.admin.assembly_members.update.success",
+    "value": "Member successfully updated for this project."
+  },
+  {
+    "id": 225,
+    "locale": "en",
+    "key": "decidim.admin.assembly_publications.create.error",
+    "value": "There was a problem publishing this project."
+  },
+  {
+    "id": 226,
+    "locale": "en",
+    "key": "decidim.admin.assembly_publications.create.success",
+    "value": "Project successfully published."
+  },
+  {
+    "id": 227,
+    "locale": "en",
+    "key": "decidim.admin.assembly_publications.destroy.error",
+    "value": "There was a problem unpublishing this project."
+  },
+  {
+    "id": 228,
+    "locale": "en",
+    "key": "decidim.admin.assembly_members.update.error",
+    "value": "There was a problem updating the member for this project."
+  },
+  {
+    "id": 229,
+    "locale": "en",
+    "key": "decidim.admin.assembly_publications.destroy.success",
+    "value": "Project successfully unpublished."
+  },
+  {
+    "id": 230,
+    "locale": "en",
+    "key": "decidim.admin.assembly_user_roles.create.success",
+    "value": "Admin successfully added to this project."
+  },
+  {
+    "id": 231,
+    "locale": "en",
+    "key": "decidim.admin.assembly_user_roles.destroy.success",
+    "value": "Admin successfully removed from this project."
+  },
+  {
+    "id": 232,
+    "locale": "en",
+    "key": "activemodel.attributes.assembly.assembly_type_other",
+    "value": "Project type other"
+  },
+  {
+    "id": 233,
+    "locale": "en",
+    "key": "activemodel.attributes.assembly.decidim_assemblies_type_id",
+    "value": "Project type"
+  },
+  {
+    "id": 234,
+    "locale": "en",
+    "key": "activemodel.attributes.assembly.parent_id",
+    "value": "Parent project"
+  },
+  {
+    "id": 235,
+    "locale": "en",
+    "key": "activerecord.models.decidim/assembly_member.one",
+    "value": "Project member"
+  },
+  {
+    "id": 236,
+    "locale": "en",
+    "key": "activerecord.models.decidim/assembly_member.other",
+    "value": "Project members"
+  },
+  {
+    "id": 237,
+    "locale": "en",
+    "key": "activerecord.models.decidim/assembly_user_role.one",
+    "value": "Project user role"
+  },
+  {
+    "id": 238,
+    "locale": "en",
+    "key": "activerecord.models.decidim/assembly_user_role.other",
+    "value": "Project user roles"
+  },
+  {
+    "id": 239,
+    "locale": "en",
+    "key": "decidim.admin.actions.new_assembly",
+    "value": "New project"
+  },
+  {
+    "id": 240,
+    "locale": "en",
+    "key": "decidim.admin.actions.new_assembly_type",
+    "value": "New project type"
+  },
+  {
+    "id": 241,
+    "locale": "en",
+    "key": "decidim.admin.assemblies_copies.create.error",
+    "value": "There was a problem duplicating this project."
+  },
+  {
+    "id": 242,
+    "locale": "en",
+    "key": "decidim.admin.assemblies_copies.create.success",
+    "value": "Project successfully duplicated."
+  },
+  {
+    "id": 243,
+    "locale": "en",
+    "key": "decidim.admin.assemblies.create.error",
+    "value": "There was a problem creating a new project."
+  },
+  {
+    "id": 244,
+    "locale": "en",
+    "key": "decidim.admin.assemblies.create.success",
+    "value": "Project created successfully."
+  },
+  {
+    "id": 245,
+    "locale": "en",
+    "key": "decidim.admin.assemblies.new.title",
+    "value": "New project"
+  },
+  {
+    "id": 246,
+    "locale": "en",
+    "key": "decidim.admin.assemblies_types.create.error",
+    "value": "There was a problem creating a new project type."
+  },
+  {
+    "id": 247,
+    "locale": "en",
+    "key": "decidim.admin.assemblies_types.create.success",
+    "value": "Project type created successfully."
+  },
+  {
+    "id": 248,
+    "locale": "en",
+    "key": "decidim.admin.assemblies_types.destroy.success",
+    "value": "Project type successfully deleted."
+  },
+  {
+    "id": 249,
+    "locale": "en",
+    "key": "decidim.admin.assemblies_types.new.title",
+    "value": "New project type"
+  },
+  {
+    "id": 250,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly_user_role.delete",
+    "value": "%{user_name} removed the participant %{resource_name} from the %{space_name} project"
+  },
+  {
+    "id": 251,
+    "locale": "en",
+    "key": "decidim.admin_log.assembly_user_role.update",
+    "value": "%{user_name} changed the role of %{resource_name} in the %{space_name} project"
+  },
+  {
+    "id": 252,
+    "locale": "en",
+    "key": "decidim.events.assembly.role_assigned.email_intro",
+    "value": "You have been assigned as %{role} for project \"%{resource_title}\"."
+  },
+  {
+    "id": 253,
+    "locale": "en",
+    "key": "decidim.events.assembly.role_assigned.email_outro",
+    "value": "You have received this notification because you are %{role} of the \"%{resource_title}\" project."
+  },
+  {
+    "id": 254,
+    "locale": "en",
+    "key": "decidim.events.assembly.role_assigned.notification_title",
+    "value": "You have been assigned as %{role} for project <a href=\"%{resource_url}\">%{resource_title}</a>."
+  },
+  {
+    "id": 255,
+    "locale": "en",
+    "key": "decidim.log.value_types.assembly_presenter.not_found",
+    "value": "The project was not found on the database (ID: %{id})"
+  },
+  {
+    "id": 256,
+    "locale": "en",
+    "key": "decidim.log.value_types.assembly_type_presenter.not_found",
+    "value": "The project type was not found on the database (ID: %{id})"
+  },
+  {
+    "id": 257,
+    "locale": "en",
+    "key": "activemodel.attributes.assembly.assembly_type",
+    "value": "Project type"
+  }
+]
