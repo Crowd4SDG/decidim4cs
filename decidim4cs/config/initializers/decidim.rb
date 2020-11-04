@@ -2,10 +2,10 @@
 
 Decidim.configure do |config|
   # The name of the application
-  config.application_name = "My Application Name"
+  config.application_name = "decidim4CS"
 
   # The email that will be used as sender in all emails from Decidim
-  config.mailer_sender = "change-me@domain.org"
+  config.mailer_sender = "no-reply@decidim4cs.iiia.csic.es"
 
   # Sets the list of available locales for the whole application.
   #
@@ -206,4 +206,3 @@ Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
 
 #Decidim::Initiatives.do_not_require_authorization = true
-
