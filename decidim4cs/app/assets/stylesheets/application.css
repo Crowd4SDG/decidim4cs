@@ -73,3 +73,11 @@
 .topbar__notifications .icon:hover {
     opacity: 1;
 }
+
+.topbar__user__login a {
+    color: #000 !important;
+}
+
+.topbar__user__login a:hover {
+    color: #ef604d !important;
+}
