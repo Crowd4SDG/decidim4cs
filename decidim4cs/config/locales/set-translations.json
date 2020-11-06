@@ -6,6 +6,30 @@
     "value": "How can I contribute to citizen science projects?"
   },
   {
+    "id": 265,
+    "locale": "en",
+    "key": "decidim.proposals.answers.not_answered",
+    "value": "Open"
+  },
+  {
+    "id": 264,
+    "locale": "en",
+    "key": "decidim.admin.filters.proposals.state_null.values.true",
+    "value": "Open"
+  },
+  {
+    "id": 266,
+    "locale": "en",
+    "key": "decidim.proposals.application_helper.filter_state_values.not_answered",
+    "value": "Open"
+  },
+  {
+    "id": 259,
+    "locale": "en",
+    "key": "decidim.help.main_topic.description",
+    "value": "Read more about decidim4CS"
+  },
+  {
     "id": 166,
     "locale": "en",
     "key": "decidim.help.participatory_spaces.assemblies.contextual",
