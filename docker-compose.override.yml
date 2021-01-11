@@ -10,26 +10,26 @@ services:
     environment:
       - RAILS_ENV=production
 #    command: ["bin/rails", "server", "-b", "ssl://decidim.iiia.csic.es:3000?key=localhost.key&cert=localhost.crt"]
-    restart: always
+    restart: on-failure
     
   pg:
     volumes:
       - pg-prod:/var/lib/postgresql/data
     env_file:
       - secrets.env
-    restart: always
+    restart: on-failure
       
   redis:
     volumes:
       - redis-prod:/data
-    restart: always
+    restart: on-failure
       
   backup:
     image: futurice/docker-volume-backup
     volumes:
       - pg-prod:/backup/pg-prod:ro    # Mount the postgresql data volume (as read-only)
       - ./backups:/archive    
-    restart: always
+    restart: on-failure
     
 volumes:
   gems-prod: {}

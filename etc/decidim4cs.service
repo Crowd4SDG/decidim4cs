@@ -5,9 +5,11 @@ Description=decidim4cs service
 Type=oneshot
 RemainAfterExit=true
 WorkingDirectory=%h/%N
-ExecStartPre=/bin/sleep 2
+ExecStartPre=-/bin/sleep 2
+#ExecStartPre=-/usr/local/bin/docker-compose down
+ExecStartPre=-/usr/bin/rm -rf decidim4cs/tmp/pids/server.pid || true
 ExecStart=/usr/local/bin/docker-compose up -d --remove-orphans
 ExecStop=/usr/local/bin/docker-compose down
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
