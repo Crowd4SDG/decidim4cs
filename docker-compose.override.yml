@@ -7,8 +7,9 @@ services:
       - secrets.env
     volumes:
       - gems-prod:/usr/local/bundle:delegated
-    environment:
-      - RAILS_ENV=production
+    #environment:
+      #- RAILS_ENV=development
+      #- RAILS_ENV=production
 #    command: ["bin/rails", "server", "-b", "ssl://decidim.iiia.csic.es:3000?key=localhost.key&cert=localhost.crt"]
     restart: on-failure
     
@@ -28,6 +29,8 @@ services:
     image: futurice/docker-volume-backup
     volumes:
       - pg-prod:/backup/pg-prod:ro    # Mount the postgresql data volume (as read-only)
+      - ./decidim4cs/public:/backup/public:ro # Mount the public directory (as read-only)
+      - ./decidim4cs/storage:/backup/storage:ro # Mount the storage directory (as read-only)
       - ./backups:/archive    
     restart: on-failure
     

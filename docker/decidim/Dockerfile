@@ -1,4 +1,4 @@
-FROM decidim/decidim:latest
+FROM decidim/decidim:0.22.0
 
 ARG USER_ID
 ARG GROUP_ID
