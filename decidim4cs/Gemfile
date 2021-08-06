@@ -1,4 +1,4 @@
-DECIDIM_VERSION = "0.23.5"
+DECIDIM_VERSION = "~>0.23"
 
 gem "figaro"
 
