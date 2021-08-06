@@ -61,7 +61,7 @@ You can stop the instance by doing
 	docker-compose down
 ```
 
-## Updating the rails app 
+## Updating the decidim version 
 
 In can happen that you get a message similar to
 
@@ -74,6 +74,7 @@ Make sure you read this general information on [updating decidim](https://docs.d
 Then do:
 
 ``` bash
+git checkout update-xx
 docker-compose stop decidim
 docker-compose run decidim gem install bundler
 docker-compose run decidim bundle install
