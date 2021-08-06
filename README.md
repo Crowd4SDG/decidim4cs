@@ -30,11 +30,13 @@ First make sure your decidim4cs/Gemfile is in the same decidim4cs version of the
 
 ```bash
 docker-compose down
+git checkout master
 docker-compose build
 docker-compose run decidim /code/bin/rebundle.sh
 scp decidim4cs:decidim4cs/backups/backup-<xxxxx>.tar.gz restore.tar.gz
 docker run --env-file .env -v `basename $PWD`_pg-prod:/dst/backup/pg-prod -v $PWD/decidim4cs/public:/dst/backup/public -v $PWD/decidim4cs/storage:/dst/backup/storage  -v $PWD/restore.tar.gz:/root/restore.tar.gz -v $PWD/bin/restore_backup.sh:/root/r.sh ubuntu /root/r.sh
-docker-compose up -d; docker-compose logs -f 
+docker-compose up -d; docker-compose logs -f
+docker-compose down
 ```
 
 ## Decidim4CS configuration files 
@@ -75,11 +77,11 @@ Make sure you read this general information on [updating decidim](https://docs.d
 Then do:
 
 ``` bash
+docker-compose down
 git checkout update-xx
-docker-compose stop decidim
+docker-compose build
 docker-compose run decidim gem install bundler
 docker-compose run decidim bundle install
-docker-compose run decidim bundle update decidim
 docker-compose run decidim bin/rails decidim:upgrade
 docker-compose run decidim bin/rails db:migrate
 docker-compose run decidim bin/rails assets:precompile
