@@ -20,7 +20,7 @@ docker-compose build
 docker-compose run decidim /code/bin/rebundle.sh
 scp decidim4cs:decidim4cs/secrets.env secrets.env
 scp decidim4cs:decidim4cs/backups/backup-<xxxxx>.tar.gz restore.tar.gz
-docker run --env-file .env -v decidim4cs_pg-prod:/dst/backup/pg-prod -v $PWD/decidim4cs/public:/dst/backup/public -v $PWD/decidim4cs/storage:/dst/backup/storage  -v $PWD/restore.tar.gz:/root/restore.tar.gz -v $PWD/bin/restore_backup.sh:/root/r.sh ubuntu /root/r.sh
+docker run --env-file .env -v `basename $PWD`_pg-prod:/dst/backup/pg-prod -v $PWD/decidim4cs/public:/dst/backup/public -v $PWD/decidim4cs/storage:/dst/backup/storage  -v $PWD/restore.tar.gz:/root/restore.tar.gz -v $PWD/bin/restore_backup.sh:/root/r.sh ubuntu /root/r.sh
 docker-compose up -d; docker-compose logs -f 
 ```
 
@@ -32,7 +32,7 @@ First make sure your decidim4cs/Gemfile is in the same decidim4cs version of the
 docker-compose down
 docker-compose run decidim /code/bin/rebundle.sh
 scp decidim4cs:decidim4cs/backups/backup-<xxxxx>.tar.gz restore.tar.gz
-docker run --env-file .env -v decidim4cs_pg-prod:/dst/backup/pg-prod -v $PWD/decidim4cs/public:/dst/backup/public -v $PWD/decidim4cs/storage:/dst/backup/storage  -v $PWD/restore.tar.gz:/root/restore.tar.gz -v $PWD/bin/restore_backup.sh:/root/r.sh ubuntu /root/r.sh
+docker run --env-file .env -v `basename $PWD`_pg-prod:/dst/backup/pg-prod -v $PWD/decidim4cs/public:/dst/backup/public -v $PWD/decidim4cs/storage:/dst/backup/storage  -v $PWD/restore.tar.gz:/root/restore.tar.gz -v $PWD/bin/restore_backup.sh:/root/r.sh ubuntu /root/r.sh
 docker-compose up -d; docker-compose logs -f 
 ```
 
@@ -61,7 +61,7 @@ You can stop the instance by doing
 	docker-compose down
 ```
 
-## Updating the rails app 
+## Updating the decidim version 
 
 In can happen that you get a message similar to
 
@@ -74,6 +74,7 @@ Make sure you read this general information on [updating decidim](https://docs.d
 Then do:
 
 ``` bash
+git checkout update-xx
 docker-compose stop decidim
 docker-compose run decidim gem install bundler
 docker-compose run decidim bundle install
