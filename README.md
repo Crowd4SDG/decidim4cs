@@ -20,7 +20,7 @@ docker-compose build
 docker-compose run decidim /code/bin/rebundle.sh
 scp decidim4cs:decidim4cs/secrets.env secrets.env
 scp decidim4cs:decidim4cs/backups/backup-<xxxxx>.tar.gz restore.tar.gz
-docker run --env-file .env -v decidim4cs_pg-prod:/dst/backup/pg-prod -v $PWD/decidim4cs/public:/dst/backup/public -v $PWD/decidim4cs/storage:/dst/backup/storage  -v $PWD/restore.tar.gz:/root/restore.tar.gz -v $PWD/bin/restore_backup.sh:/root/r.sh ubuntu /root/r.sh
+docker run --env-file .env -v `basename $PWD`_pg-prod:/dst/backup/pg-prod -v $PWD/decidim4cs/public:/dst/backup/public -v $PWD/decidim4cs/storage:/dst/backup/storage  -v $PWD/restore.tar.gz:/root/restore.tar.gz -v $PWD/bin/restore_backup.sh:/root/r.sh ubuntu /root/r.sh
 docker-compose up -d; docker-compose logs -f 
 ```
 
