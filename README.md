@@ -17,7 +17,7 @@ git clone  git@github.com:Crowd4SDG/decidim4cs.git
 cd decidim4cs
 bin/fill.env.sh
 docker-compose build
-docker-compose run decidim /code/bin/rebundle.sh
+docker-compose run decidim /code/bin/rebundle.sh; docker-compose down
 scp decidim4cs:decidim4cs/secrets.env secrets.env
 scp decidim4cs:decidim4cs/backups/backup-<xxxxx>.tar.gz restore.tar.gz
 docker run --env-file .env -v `basename $PWD`_pg-prod:/dst/backup/pg-prod -v $PWD/decidim4cs/public:/dst/backup/public -v $PWD/decidim4cs/storage:/dst/backup/storage  -v $PWD/restore.tar.gz:/root/restore.tar.gz -v $PWD/bin/restore_backup.sh:/root/r.sh ubuntu /root/r.sh
@@ -37,7 +37,7 @@ First make sure your decidim4cs/Gemfile is in the same decidim4cs version of the
 docker-compose down
 git checkout master
 docker-compose build
-docker-compose run decidim /code/bin/rebundle.sh
+docker-compose run decidim /code/bin/rebundle.sh; docker-compose down
 scp decidim4cs:decidim4cs/backups/backup-<xxxxx>.tar.gz restore.tar.gz
 docker run --env-file .env -v `basename $PWD`_pg-prod:/dst/backup/pg-prod -v $PWD/decidim4cs/public:/dst/backup/public -v $PWD/decidim4cs/storage:/dst/backup/storage  -v $PWD/restore.tar.gz:/root/restore.tar.gz -v $PWD/bin/restore_backup.sh:/root/r.sh ubuntu /root/r.sh
 docker-compose up -d; docker-compose logs -f
