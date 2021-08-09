@@ -24,7 +24,9 @@ bin/restore.sh <branch>
 
 ```bash
 docker-compose down
-docker-compose run --rm --no-deps backup ./backup.sh
+docker-compose up -d backup
+docker-compose exec backup ./backup.sh
+docker-compose down
 ```
 
 ## Restoring a backup
@@ -75,11 +77,11 @@ Then do:
 ``` bash
 docker-compose down
 git checkout update-xx
-docker-compose build
-docker-compose run decidim gem install bundler
-docker-compose run decidim bundle install
-docker-compose run decidim bin/rails decidim:upgrade
-docker-compose run decidim bin/rails db:migrate
-docker-compose run decidim bin/rails assets:precompile
+docker-compose up --no-start --build --force-recreate  
+docker-compose run --rm decidim gem install bundler
+docker-compose run --rm decidim bundle install
+docker-compose run --rm decidim bin/rails decidim:upgrade
+docker-compose run --rm decidim bin/rails db:migrate
+docker-compose run --rm decidim bin/rails assets:precompile
 ``` 
 
