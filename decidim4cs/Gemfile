@@ -1,4 +1,4 @@
-DECIDIM_VERSION = "~>0.23"
+DECIDIM_VERSION = "~>0.24"
 
 gem "figaro"
 
@@ -9,7 +9,7 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 gem "decidim", DECIDIM_VERSION
-gem "decidim-term_customizer", DECIDIM_VERSION
+gem "decidim-term_customizer", 0.23
 
 #gem "decidim-consultations", DECIDIM_VERSION
 #gem "decidim-initiatives", DECIDIM_VERSION
