@@ -29,7 +29,7 @@ docker-compose run --rm --no-deps backup ./backup.sh
 
 ## Restoring a backup
 
-First make sure your decidim4cs/Gemfile is in the same decidim4cs version of the backup you want to restore!!!!
+First make sure your decidim4cs/Gemfile is in the same decidim4cs version of the backup you want to restore, which should be in restore.tar.gz!!!!
 
 ```bash
 bin/restore.sh <branch>
