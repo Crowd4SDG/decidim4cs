@@ -37,6 +37,8 @@ First make sure your decidim4cs/Gemfile is in the same decidim4cs version of the
 bin/restore.sh <branch>
 ```
 
+In development, it could be the case that you are told that migrations are required, specially if you have been playing with updating back an forth to different versions of decidim. If that is the case, you can go to the `decidim4cs/db/migrate` directory and remove all migrations. 
+
 ## Decidim4CS configuration files 
 
 There are three files that keep the configuration. Let's visit them one by one. 
@@ -64,13 +66,7 @@ You can stop the instance by doing
 
 ## Updating the decidim version 
 
-In can happen that you get a message similar to
-
-```Could not find rake-13.0.0 in any of the sources```
-
-when starting the decidim container. 
-It also can happen that you want to migrate to a higher decidim version. 
-Make sure you read this general information on [updating decidim](https://docs.decidim.org/en/install/update/)
+If you want to migrate to a higher decidim version, make sure you read this general information on [updating decidim](https://docs.decidim.org/en/install/update/)
 
 Then do:
 
@@ -79,9 +75,8 @@ docker-compose down
 git checkout update-xx
 docker-compose up --no-start --build --force-recreate  
 docker-compose run --rm decidim gem install bundler
-docker-compose run --rm decidim bundle install
+docker-compose run --rm decidim bundle install # If this fails you can try 'docker-compose run --rm decidim bundle update'
 docker-compose run --rm decidim bin/rails decidim:upgrade
 docker-compose run --rm decidim bin/rails db:migrate
 docker-compose run --rm decidim bin/rails assets:precompile
-``` 
-
+```
