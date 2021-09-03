@@ -10,6 +10,7 @@ ruby RUBY_VERSION
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-term_customizer", git: 'https://github.com/mainio/decidim-module-term_customizer'
+gem "decidim-direct_verifications", git: 'https://github.com/Platoniq/decidim-verifications-direct_verifications'
 
 #gem "decidim-consultations", DECIDIM_VERSION
 #gem "decidim-initiatives", DECIDIM_VERSION
