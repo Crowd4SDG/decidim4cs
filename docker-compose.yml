@@ -1,5 +1,16 @@
 version: '3'
 services:
+
+  nginx:
+    build:
+      context: docker/nginx
+    volumes:
+      - ./etc/nginx/user_conf.d:/etc/nginx/user_conf.d:ro
+      - ./etc/letsencrypt:/etc/letsencrypt
+    ports:
+      - "80:80"
+      - "443:443"
+
   decidim:
     build: 
       context: docker/decidim
